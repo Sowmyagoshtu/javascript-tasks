@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Website</title>
+    <link rel="stylesheet" href ="styles.css">
+</head>
+<body>
+    
+    <!--Home page-->
+    <nav>
+        <div class="logo">
+            <h1>Events</h1>
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Event Schedule</a></li>
+            <li><a href="#">Sponsors</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Register</a></li>
+            <li>
+                <button class="theme-toggle-btn" id="theme-toggle-btn" onclick="toggleTheme()">Dark mode</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <div class="content">
+            <div class="intro">
+                <h1>Welcome to Our Events Website</h1>
+                <p>Join us for an unforgettable experience filled with inspiring sessions, engaging activities, and much more.</p>
+                <a href="#register" class="btn">Register Now</a>
+            </div>
+            <div class="image-container">
+                <img src="event-1.jpg" alt="Events Image">
+                <img src="event-2.jpg.crdownload" alt="Events Image">
+                <img src="Event-3.jpg" alt="Events Image">
+            </div>
+        </div>
+    </div>
+   
+    <!-- Event Schedule Table -->
+    
+        <div class="table-section">
+            <h2>Event Schedule</h2>
+            <table>
+                <tr>
+                    <th rowspan="2" class="no-bottom-border">Day</th>
+                    <th colspan="2" class="timetable-header">Timetable</th>
+                    <th rowspan="3" class="no-bottom-border">Events</th>
+                </tr>
+                <tr>
+                    <th colspan="2" class="schedule-header">Schedule</th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th>Start</th>
+                    <th>End</th>
+                </tr>
+                <tr>
+                    <td class="day" rowspan="2">Monday</td>
+                    <td class="no-bottom-border">8:00 a.m</td>
+                    <td class="no-bottom-border">5:00 p.m</td>
+                    <td>Event1</td>
+                </tr>
+                <tr>
+                    <td class="no-top-border"></td>
+                    <td class="no-top-border"></td>
+                    <td>Event2</td>
+                </tr>
+                <tr>
+                    <td class="day" rowspan="3">Tuesday</td>
+                    <td>8:00 a.m</td>
+                    <td>5:00 p.m</td>
+                    <td>Event3</td>
+                </tr>
+                <tr>
+                    <td>11:00 a.m</td>
+                    <td>2:00 p.m</td>
+                    <td>Event4</td>
+                </tr>
+                <tr>
+                    <td>2:00 p.m</td>
+                    <td>5:00 p.m</td>
+                    <td>Event5</td>
+                </tr>
+                <tr>
+                    <td class="day">Wednesday</td>
+                    <td>8:00 a.m</td>
+                    <td>12:00 p.m</td>
+                    <td>Event6</td>
+                </tr>
+                <tr>
+                    <td class="day" rowspan="2">Thursday</td>
+                    <td>8:00 a.m</td>
+                    <td>5:00 p.m</td>
+                    <td>Event7</td>
+                </tr>
+                <tr>
+                    <td>11:00 a.m</td>
+                    <td>2:00 p.m</td>
+                    <td>Event8</td>
+                </tr>
+            </table>
+        </div>
+        
+        <!-- List of Sponsors-->
+        <div class="list-section">
+            <h2>Sponsors</h2>
+            <ul>
+                <li class="list-item">Tech Solutions Inc.</li>
+                <li class="list-item">Global Marketing Co.</li>
+                <li class="list-item">Innovative Designs Ltd.</li>
+                <li class="list-item">EcoFriendly Products</li>
+                <li class="list-item">Creative Ventures</li>
+            </ul>
+        </div>
+        
+        <!-- Media Section -->
+        <div class="media-section">
+            <h2>Media</h2>
+            <iframe src="https://www.youtube.com/embed/VIDEO_ID" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Registration Form -->
+        <div class="form-section">
+            <h2>Registration Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <label for="gender">Gender:</label>
+                <div id="gender">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </div>
+                
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob">
+                
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file">
+                
+                <label for="attending">Attending:</label>
+                <select id="attending" name="attending">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                    <option value="maybe">Maybe</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4"></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <!--Accordian section-->
+    <div class="accordion-section ">
+        <h2>FAQ</h2>
+    <button class="accordion">Is there an entry fee for the event?</button>
+    <div class="panel">
+      <p>Yes, there is an entry fee for the event. The fee details are listed on the registration page. Early bird discounts are available for a limited time.</p>
+    </div>
+    
+    <button class="accordion">Can I attend the event virtually?</button>
+    <div class="panel">
+      <p>Yes, we offer virtual attendance options. You can choose to attend online when registering.</p>
+    </div>
+    
+    <button class="accordion">What should I bring to the event?</button>
+    <div class="panel">
+      <p>We recommend bringing your registration confirmation, a valid ID, business cards, and any materials you might need for note-taking or networking.</p>
+    </div>
+    </div>
+    <button class="back-to-top" id="back-to-top" onclick="scrollToTop()">↑</button>
+<script src="script.js"> </script>
+</body>
+</html>
